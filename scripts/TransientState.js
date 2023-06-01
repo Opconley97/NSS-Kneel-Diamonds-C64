@@ -1,19 +1,19 @@
 const transientState = {
-    "metal": "",
-    "size": 0,
-    "style": ""
+    "metalId": 0,
+    "sizeId": 0,
+    "styleId": 0
 }
 
 export const SetMetal = (chosenMetal) => {
-    transientState.metal = chosenMetal
+    transientState.metalId = chosenMetal
 }
 
 export const setSize = (chosenSize) => {
-    transientState.size = chosenSize
+    transientState.sizeId = chosenSize
 }
 
 export const setStyle = (chosenStyle) => {
-    transientState.style = chosenStyle
+    transientState.styleId = chosenStyle
 }
 
 export const SaveOptionsSubmission = async () => {

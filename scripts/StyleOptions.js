@@ -3,8 +3,7 @@ import { setStyle } from "./TransientState.js"
 
 const handleStyleChange = (changeEvent) => {
     if (changeEvent.target.name === "style") {
-        const style = changeEvent.target.value
-        setStyle(style)
+        setStyle(parseInt(changeEvent.target.value))
     }
 }
 
@@ -21,7 +20,7 @@ export const StyleOptions = async () => {
         (style) => {
             return `<div>
             <input type='radio' name='style'
-            value='${style.style}'/>${style.style}
+            value='${style.id}'/>${style.style}
             </div>`
         }
     )

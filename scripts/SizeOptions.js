@@ -3,8 +3,7 @@ import { setSize } from "./TransientState.js"
 
 const handleSizeChange = (changeEvent) => {
     if (changeEvent.target.name === "size") {
-        const size = changeEvent.target.value
-        setSize(size)
+        setSize(parseInt(changeEvent.target.value))
     }
 }
 
@@ -20,7 +19,7 @@ export const SizeOptions = async () => {
     const divStringArray = sizes.map(
         (size) => {
             return `<div>
-            <input type='radio' name='size' value='${size.carets}'/>
+            <input type='radio' name='size' value='${size.id}'/>
             ${size.carets}
             </div>`
         }

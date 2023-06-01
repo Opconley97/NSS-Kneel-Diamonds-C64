@@ -72,22 +72,34 @@
   ],
   "orders": [
     {
-      "metal": "Sterling Silver",
-      "size": "0.5",
-      "style": "Classic",
+      "metalId": 1,
+      "sizeId": 1,
+      "styleId": 1,
       "id": 1
     },
     {
-      "metal": "Sterling Silver",
-      "size": "0.5",
-      "style": "Classic",
+      "metalId": 2,
+      "sizeId": 2,
+      "styleId": 2,
       "id": 2
     },
     {
-      "metal": "Platinum",
-      "size": "2",
-      "style": "Modern",
+      "metalId": 5,
+      "sizeId": 5,
+      "styleId": 3,
       "id": 3
+    },
+    {
+      "metalId": 5,
+      "sizeId": 5,
+      "styleId": 2,
+      "id": 4
+    },
+    {
+      "metalId": 5,
+      "sizeId": 5,
+      "styleId": 1,
+      "id": 5
     }
   ]
 }

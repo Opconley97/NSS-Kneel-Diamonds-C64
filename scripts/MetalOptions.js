@@ -3,8 +3,7 @@ import { SetMetal } from "./TransientState.js"
 
 const handleMetalChange = (changeEvent) => {
     if(changeEvent.target.name === "metal") {
-        const metal = changeEvent.target.value
-        SetMetal(metal)
+        SetMetal(parseInt(changeEvent.target.value))
     }
 }
 
@@ -22,7 +21,7 @@ export const MetalOptions = async () => {
         (metal) => {
             return `<div>
             <input type='radio' name='metal'
-            value='${metal.metal}'/>${metal.metal}
+            value='${metal.id}'/>${metal.metal}
             </div>`
         }
     )
